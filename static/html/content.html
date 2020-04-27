@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <script src="/static/js/main.js"></script>
+    <meta id="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="login">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets10.lottiefiles.com/packages/lf20_Y05lFY.json"
+        background="transparent"
+        speed="1"
+        style="height: 200px;"
+        loop
+        autoplay
+      ></lottie-player>
+      <section class="sec">
+        <input
+          id="age"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Age"
+        />
+        <input
+          id="bp"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Blood Pressure"
+        />
+        <input
+          id="pot"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Potassium"
+        />
+      </section>
+      <section class="sec">
+        <input
+          id="sg"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Specific Gravity"
+        />
+        <input
+          id="al"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Albumin"
+        />
+        <input
+          id="su"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Sugar"
+        />
+      </section>
+      <section class="sec">
+        <select id="rbc" class="drop">
+          <option value="" disabled selected>Red Blood Cells</option>
+          <option value="0">Normal</option>
+          <option value="1">AbNormal</option>
+        </select>
+        <select id="pc" class="drop">
+          <option value="" disabled selected>Pus Cell</option>
+          <option value="0">Normal</option>
+          <option value="1">AbNormal</option>
+        </select>
+        <select id="pcc" class="drop">
+          <option value="" disabled selected>Pus Cell Clumps</option>
+          <option value="0">Not Present</option>
+          <option value="1">Present</option>
+        </select>
+      </section>
+      <section class="sec">
+        <select id="ba" class="drop">
+          <option value="" disabled selected>Bacteria</option>
+          <option value="0">Not Present</option>
+          <option value="1">Present</option>
+        </select>
+        <input
+          id="bgr"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Blood Glucose Random"
+        />
+        <input
+          id="bu"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Blood Urea"
+        />
+      </section>
+      <section class="sec">
+        <input
+          id="sc"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Serum Creatinine"
+        />
+        <input
+          id="sod"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Sodium"
+        />
+        <input
+          id="hemo"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Hemoglobin"
+        />
+      </section>
+      <section class="sec">
+        <input
+          id="pcv"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Packed Cell Volume"
+        />
+        <input
+          id="wc"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="White Blood Cell Count"
+        />
+        <input
+          id="rc"
+          class="field"
+          type="number"
+          step="any"
+          placeholder="Red Blood Cell Count"
+        />
+      </section>
+      <section class="sec">
+        <select id="htn" class="drop">
+          <option value="" disabled selected>Hypertension</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <select id="dm" class="drop">
+          <option value="" disabled selected>Diabetes Milletus</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <select id="cad" class="drop">
+          <option value="" disabled selected>Coronary Artery Disease</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+      </section>
+      <section class="sec">
+        <select id="appet" class="drop">
+          <option value="" disabled selected>Appetite</option>
+          <option value="1">Good</option>
+          <option value="0">Bad</option>
+        </select>
+        <select id="pe" class="drop">
+          <option value="" disabled selected>Pedal Edema</option>
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </select>
+        <select id="ane" class="drop">
+          <option value="" disabled selected>Anemia</option>
+          <option value="1">Yes</option>
+          <option value="1">No</option>
+        </select>
+      </section>
+      <button onClick="predict(this.form)" class="bt">Predict</button>
+    </div>
+    <link rel="stylesheet" href="/static/material/material-modal.css" />
+    <script src="/static/material/material-modal.js"></script>
+  </body>
+</html>

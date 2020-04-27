@@ -1,4 +1,4 @@
-# llSPS-INT-175-Chronic-kidney-disease-analysis
+# Chronic-kidney-disease-analysis
 Chronic kidney disease analysis
 
 
